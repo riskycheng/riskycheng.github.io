@@ -21,4 +21,4 @@ tags:
 - **PaddleOCR c++部署实现文本检测识别**
 
 ## 效果演示
-<video src="./resources/package_text_det_rec_demo.mp4"></video>
+![Screenshot 2022-05-19 204953.png](http://tva1.sinaimg.cn/large/6b260656gy1h2e07mgmxdj20l30ykwu9.jpg)
