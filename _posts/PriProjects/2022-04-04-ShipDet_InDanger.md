@@ -54,7 +54,7 @@ tags:
 - 防误报增稳窗口及阈值
 
 配置文件:  
-{% highlight json %}
+{% highlight bash %}
 {
   "detector": {
     "det_conf_thresh": 0.4,
@@ -99,7 +99,7 @@ tags:
 ### **阶段-3** 技术要点
 #### **支持HTTP协议数据传输** 
 将实时检测数据，以json报文方式通过libCurl进行数据回传:  
-{% highlight json %}
+{% highlight bash %}
  {                                                              
     "cameraID" : 1234,                                      
     "dangerousRegion" :                                     
