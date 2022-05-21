@@ -53,8 +53,8 @@ tags:
 - 检测目标置信度阈值
 - 防误报增稳窗口及阈值
 
-配置文件：
-```java
+配置文件:  
+{% highlight json %}
 {
   "detector": {
     "det_conf_thresh": 0.4,
@@ -86,7 +86,7 @@ tags:
     "remote_url": "http://shanghai.test.com:8005/Info/cameraInfo"
   }
 }
-```
+{% endhighlight %}
 
 #### **RTSP实时流解析**
 支持基于libVLC的实时流解析，兼容市面上各厂商的网络摄像机，支持RTSP、HTTP、RTMP等多重格式。
@@ -98,8 +98,8 @@ tags:
 
 ### **阶段-3** 技术要点
 #### **支持HTTP协议数据传输** 
-将实时检测数据，以json报文方式通过libCurl进行数据回传：
-```java
+将实时检测数据，以json报文方式通过libCurl进行数据回传:  
+{% highlight json %}
  {                                                              
     "cameraID" : 1234,                                      
     "dangerousRegion" :                                     
@@ -117,7 +117,7 @@ tags:
     "isIndanger" : false,                                   
     "timeStamp" : "2022/5/21 15:14:12"                      
 }                                                               
-```
+{% endhighlight %}
 
 
 # 效果演示
