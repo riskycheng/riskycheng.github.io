@@ -12,6 +12,7 @@ tags:
 - 文本检测识别
 ---
 
+
 ## 需求背景
 ### 难点
 针对快递面单信息提取需求，使用OCR 可以进行文本内容的提取（检测 & 识别 ）。但却难以分解收件人、寄件人等具体信息。并且由于不同厂商、同一厂商不同时期的面单格式可能存在较大差异，从而使得后检测识别后的内容理解&分解变得更加复杂。
@@ -20,8 +21,9 @@ tags:
 - **阶段-1：搜索整个页面中目标区域锚点（收件人）**
 - **阶段-2：针对感兴趣区域（收件人）进行文本检测和识别**
 - **阶段-3：针对识别内容进行基于正则匹配实现内容分解**
+- **阶段-4：支持外部json配置和结果输出**
 
-#### **阶段-1** 所涉及技术要点：
+#### **阶段-1** 技术要点：
 - **自训练检测模型**
 针对收件人区域存在的锚点图标（收字状的气泡）、符号（【收】）或者其他格式，选用NanoDet深度深度学习检测模型进行训练。
 该项目中，要求覆盖不同收件人锚点格式，采集对应的数据集（10K+）进行数据标注，并完成模型训练和量化。
@@ -30,16 +32,41 @@ tags:
 不过针对配有Nvidia显卡或者Intel CPU的机型，可以使用TensorRT或OpenVINO作为代替。
 
 
-#### **阶段-2** 所涉及技术要点：
+#### **阶段-2** 技术要点
 - **OCR文本检测识别模型部署**
 在第一阶段确定收件人区域后，在该区域进行文本位置的检测，并识别内容。选用PaddleOCR方案，达到100ms/帧的识别速率（i5-10400F)。该方式可以避免对全文进行文本检测和识别，造成大量的无效计算，并且影响后续的页面分析提取收件人信息的负担。
 对PaddleOCR实现基于c++的推理框架部署，可以便捷地部署到多平台。
 
-#### **阶段-3** 所涉及技术要点：
+#### **阶段-3** 技术要点
 - **正则匹配分解识别内容**
 识别出收件人区域的全部信息后，结合先验知识:手机号码的格式，收件人区域一般处于手机号码的前半部分，详细地址处于手机号码的后半部分，因此结合第一阶段的检测结果，对其相对位置进行排序筛选，可以解析出收件人的各字段信息。
 
-
+#### **阶段-4** 技术要点
+- **外部json配置文件**
+```json
+# Application Config
+cameraID 1
+# angleRotation contains only 0/ 90 / 180 / 270 clockwise
+angleRotation 0
+# flip the image, 0 for not-flip, 1 for flip
+flip 0
+# the prefix saving location for the result json file
+savePathPrefix ./
+# whether loading the existing file to avoid adding duplicated items, 0 for not loading, 1 for loading
+preLoadResult 0
+# check the hit count above thresh, write to file if reaching this number
+hitCount 3
+# the confidence thresh of phone number, it is valid only when it is above this value
+hitThresh 0.8
+```
+- **结果json输出**
+```json
+{"sn":"1257012340251","name":"欢迎","phone":"13888542325","address":"云南省昆明市西山区西苑街道新发小区顺达里2栋3单元601","date":"2022-03-04 21:15:26"}
+{"sn":"1256985462551","name":"Z日","phone":"13971214576","address":"湖北省武汉市黄陂区罗汉寺街道黄陂区罗没寺街庙地村田铺瓷","date":"2022-03-04 21:15:55"}
+{"sn":"1257004579851","name":"马锁娃","phone":"18419395859","address":"甘肃省天水市甘谷县安远镇北川村一组","date":"2022-03-04 21:16:22"}
+{"sn":"1256970659551","name":"黄志权","phone":"18825836307","address":"广东省梅州市大埔县枫朗镇枫朗村2队12号","date":"2022-03-04 21:16:46"}
+{"sn":"1257010269951","name":"周正思","phone":"18007864359","address":"广西壮族自治区百色市田东县作登瑶族乡登高村陇水屯","date":"2022-03-04 21:17:04"}
+```
 
 ## 效果演示
 ![Animation.gif](http://tva1.sinaimg.cn/large/6b260656gy1h2fz9m7kihg20l40yjhdu.gif)
@@ -53,6 +80,7 @@ tags:
 - **NanoDet基于NCNN部署**
 - **jsoncpp支持外部配置文件解析和结果输出**
 - **基于检测结果的结构化信息分析**
+- **基于Zbar C++实现条形码识别部署**
 
 
 ## 定制合作
