@@ -47,14 +47,13 @@ tags:
 ## 运行程序
 [百度云：可执行程序下载](链接：https://pan.baidu.com/s/1jn_ukT751RkJh-B3Odnfew?pwd=9pq5)
 ### 涉及内容
-```
-- 重编译OpenCV （支持中文绘制)
-- PaddleOCR C++推理框架部署
-- NanoDet 模型模型训练
-- NanoDet基于NCNN部署
-- jsoncpp支持外部配置文件解析和结果输出
-- 基于检测结果的结构化信息分析
-```
+- **重编译OpenCV （支持中文绘制)**
+- **PaddleOCR C++推理框架部署**
+- **NanoDet 模型模型训练**
+- **NanoDet基于NCNN部署**
+- **jsoncpp支持外部配置文件解析和结果输出**
+- **基于检测结果的结构化信息分析**
+
 
 ## 定制合作
 可支持需求定制部署，解决实际生产过程中遇到的问题，解放低效人力，高效低成本运作。  
