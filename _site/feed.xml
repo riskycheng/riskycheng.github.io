@@ -9,7 +9,7 @@
       <item>
         <title>快递面单收件人信息识别</title>
         <category>privProjects</category>
-        <description>需求背景通过检测器检测特定图标，完成收件人区域的定位，再根据版面相对位置信息，使用OCR结合正则匹配进行文本内容检测与识别，从而实现收件人信息的提取。该项目中应用到的技术点：  Nanodet ...</description>
+        <description>需求背景难点针对快递面单信息提取需求，使用OCR 可以进行文本内容的提取（检测 &amp; 识别 ）。但却难以分解收件人、寄件人等具体信息。并且由于不同厂商、同一厂商不同时期的面单格式可能存在较...</description>
         <pubDate>2022-05-14 15:45:56 </pubDate>
         <link>http://localhost:4000/2022/05/14/packageDet_Rec.html</link>
         <guid isPermaLink="true">http://localhost:4000/2022/05/14/packageDet_Rec.html</guid>
@@ -18,7 +18,7 @@
       <item>
         <title>船闸船舶危险区域监测</title>
         <category>privProjects</category>
-        <description>船舶检测及危险警戒线状态预警。支持基于OpenVINO，NCNN-Vulkan推理加速，支持RTSP流输入。需求背景通过检测器检测特定图标，完成收件人区域的定位，再根据版面相对位置信息，使用OC...</description>
+        <description>船舶检测及危险警戒线状态预警。支持基于OpenVINO，NCNN-Vulkan推理加速，支持RTSP流输入。需求背景难点针对船舶通过船闸的场景，当船舶通过前，需要打开闸门，同时会形成一定范围的警...</description>
         <pubDate>2022-04-14 15:45:56 </pubDate>
         <link>http://localhost:4000/2022/04/14/ShipDet_InDanger.html</link>
         <guid isPermaLink="true">http://localhost:4000/2022/04/14/ShipDet_InDanger.html</guid>

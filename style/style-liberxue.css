@@ -186,6 +186,7 @@ pre code {
     display: block;
     overflow: auto;
     border: 0;
+    background-color: rgb(244, 244, 244);
 }
 
 blockquote {
@@ -1148,8 +1149,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     line-height: 20px;
     margin: 0;
     padding: 1.3em;
-    color: #dcdcdc;
-    background-color: #3c3c3c;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 pre code::after {

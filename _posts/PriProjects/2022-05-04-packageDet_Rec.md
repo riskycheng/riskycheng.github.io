@@ -43,29 +43,21 @@ tags:
 
 #### **阶段-4** 技术要点
 - **外部json配置文件**
-```bash
-# Application Config
-cameraID 1
-# angleRotation contains only 0/ 90 / 180 / 270 clockwise
-angleRotation 0
-# flip the image, 0 for not-flip, 1 for flip
-flip 0
-# the prefix saving location for the result json file
-savePathPrefix ./
-# whether loading the existing file to avoid adding duplicated items, 0 for not loading, 1 for loading
-preLoadResult 0
-# check the hit count above thresh, write to file if reaching this number
-hitCount 3
-# the confidence thresh of phone number, it is valid only when it is above this value
-hitThresh 0.8
+```
+cameraID 1            // 指定不同相机
+angleRotation 0       // 图像旋转，支持0, 90, 180, 270
+flip 0                // 图像镜像翻转，1表示开启
+savePathPrefix ./     // 结果存储位置
+preLoadResult 0       // 是否加载已有结果用于去重
+hitCount 3            // 连续命中次数达标后写入结果
+hitThresh 0.8         // 命中判定阈值
 ```
 - **结果json输出**
-```shell
-{"sn":"1257012340251","name":"欢迎","phone":"13888542325","address":"云南省昆明市西山区西苑街道新发小区顺达里2栋3单元601","date":"2022-03-04 21:15:26"}
-{"sn":"1256985462551","name":"Z日","phone":"13971214576","address":"湖北省武汉市黄陂区罗汉寺街道黄陂区罗没寺街庙地村田铺瓷","date":"2022-03-04 21:15:55"}
+```
+{"sn":"1257012340251","name":"欢迎","phone":"13888542325","address":"云南省昆明市新发小区顺达里2栋3单元601","date":"2022-03-04 21:15:26"}
 {"sn":"1257004579851","name":"马锁娃","phone":"18419395859","address":"甘肃省天水市甘谷县安远镇北川村一组","date":"2022-03-04 21:16:22"}
 {"sn":"1256970659551","name":"黄志权","phone":"18825836307","address":"广东省梅州市大埔县枫朗镇枫朗村2队12号","date":"2022-03-04 21:16:46"}
-{"sn":"1257010269951","name":"周正思","phone":"18007864359","address":"广西壮族自治区百色市田东县作登瑶族乡登高村陇水屯","date":"2022-03-04 21:17:04"}
+{"sn":"1257010269951","name":"周正思","phone":"18007864359","address":"广西壮族自治区百色市乡登高村陇水屯","date":"2022-03-04 21:17:04"}
 ```
 
 ## 效果演示

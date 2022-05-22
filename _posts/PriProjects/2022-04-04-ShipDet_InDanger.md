@@ -29,20 +29,20 @@ tags:
 - **阶段-2：支持警戒区域自定义及RTSP实时流**
 - **阶段-3：通过HTTP网络协议进行实时数据回传**
 
-### **阶段-1** 技术要点
-#### **自训练检测模型**
+## **阶段-1** 技术要点
+### **自训练检测模型**
 针对该视场下不同时刻的视频数据进行人工标注、自定义深度学习模型训练，实现能够克服不同光照、角度、大小、距离、形状、运动速度等目标船只的精准定位。
-#### **检测模型部署**
+### **检测模型部署**
 对于训练好的模型，通过基于两种方式进行加速部署：
 ###### **针对具备NVIDIA显卡设备**
 采用基于NCNN + Vulkan进行部署，在i5-10400F + RTX3060上达到15ms/帧的推理速度 （未量化）
 ###### **针对Intel纯CPU设备**
 采用基于Intel OpenVINO进行部署，在i5-10400F 上达到7ms/帧的推理速度 （未量化，不含核显，否则会更快）
-#### **算法架构**
+### **算法架构**
 ![Picture.png](http://tva1.sinaimg.cn/large/6b260656gy1h2g22cub87j20ti0c8n0x.jpg)
 
-### **阶段-2** 技术要点
-#### **支持外部json配置**  
+## **阶段-2** 技术要点
+### **支持外部json配置**  
 
 支持基于json外部配置，包括：
 
@@ -54,7 +54,7 @@ tags:
 - 防误报增稳窗口及阈值
 
 配置文件:  
-{% highlight bash %}
+```
 {
   "detector": {
     "det_conf_thresh": 0.4,
@@ -86,20 +86,20 @@ tags:
     "remote_url": "http://shanghai.test.com:8005/Info/cameraInfo"
   }
 }
-{% endhighlight %}
+```
 
-#### **RTSP实时流解析**
+### **RTSP实时流解析**
 支持基于libVLC的实时流解析，兼容市面上各厂商的网络摄像机，支持RTSP、HTTP、RTMP等多重格式。
 
-#### **流程架构**
+### **流程架构**
 ![Picture2.png](http://tva1.sinaimg.cn/large/6b260656gy1h2g23hubjvj20v40ae77u.jpg)
 
 
 
-### **阶段-3** 技术要点
-#### **支持HTTP协议数据传输** 
+## **阶段-3** 技术要点
+### **支持HTTP协议数据传输** 
 将实时检测数据，以json报文方式通过libCurl进行数据回传:  
-{% highlight bash %}
+```
  {                                                              
     "cameraID" : 1234,                                      
     "dangerousRegion" :                                     
@@ -117,7 +117,7 @@ tags:
     "isIndanger" : false,                                   
     "timeStamp" : "2022/5/21 15:14:12"                      
 }                                                               
-{% endhighlight %}
+```
 
 
 # 效果演示
@@ -125,7 +125,7 @@ tags:
 
 # 运行程序
 [百度云：可执行程序下载](链接：https://pan.baidu.com/s/1d9bHeCwWUQYBrxA0W9vosg?pwd=h8c0)
-### 涉及内容
+## 涉及内容
 - **NanoDet 模型模型训练**
 - **NanoDet基于NCNN + Vulkan部署**
 - **NanoDet基于OpenVINO部署**
