@@ -25,7 +25,7 @@ tags:
 
 # 解决方案
 通过基于深度学习的计算机视觉方案融入目标检测理解：  
-- **阶段-1：实时检测目标船只位置**
+- **阶段-1：实时检测目标船只位置及跟踪**
 - **阶段-2：支持警戒区域自定义及RTSP实时流**
 - **阶段-3：通过HTTP网络协议进行实时数据回传**
 
@@ -121,12 +121,13 @@ tags:
 
 
 # 效果演示
-![Animation.gif](http://tva1.sinaimg.cn/large/6b260656gy1h2g0ik1zjzg20qq0fvx6p.gif)
+![Animation.gif](http://tva1.sinaimg.cn/large/6b260656gy1h40n6xqwwug21420ne1l2.gif)
 
 # 运行程序
 [百度云：可执行程序下载](链接：https://pan.baidu.com/s/1d9bHeCwWUQYBrxA0W9vosg?pwd=h8c0)
 ## 涉及内容
 - **NanoDet 模型模型训练**
+- **ByteTrack 目标跟踪**
 - **NanoDet基于NCNN + Vulkan部署**
 - **NanoDet基于OpenVINO部署**
 - **Jsoncpp用于json解析及回传数据打包**
