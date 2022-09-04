@@ -11,8 +11,8 @@ tags:
 - Vulkan
 ---
 
-使用流行的NCNN, DNN， MNN， SNPE， torch_c++ 等框架将主流的Yolo，Nanodet， MobileSSD等模型部署到Android设备上。
 # 需求背景
+使用流行的NCNN, DNN， MNN， SNPE， torch_c++ 等框架将主流的Yolo，Nanodet， MobileSSD等模型部署到Android设备上。
 ## 难点
 当前深度学习模型多是使用python进行训练并推理运行，在实验阶段有较高的效率，但是无法直接部署到端侧设备上。并且不同的厂商结合自身硬件优势提供了不同的推理框架，从而也使得部署实现变得复杂。
 
