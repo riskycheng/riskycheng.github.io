@@ -128,7 +128,7 @@ public void onAnalysisDone(Bitmap resBitmap) {
 对于部署，不同于上一个版本，默认的模型结构中将之前的3尺度6输出，合并成单个节点输出：
 ![006C3FgEgy1gxs7a3po8qj30k008sab2.jpg](http://tva1.sinaimg.cn/large/6b260656gy1h5uz12itk8j20k008saay.jpg)
 
-从原作者的git仓库中： [https://github.com/RangiLyu/nanodet/tree/main/demo_ncnn](https://note.youdao.com/)进行封装：
+从原作者的git仓库中： [https://github.com/RangiLyu/nanodet/tree/main/demo_ncnn](https://note.youdao.com/)进行封装.  
 接口定义 nanodet.h:
 ```
 //
@@ -524,6 +524,9 @@ Java_com_fatfish_chengjian_utils_JNIManager_nanoDet_1Detect(JNIEnv *env, jobject
 - **OpenCV 用于Android版本图像处理**
 - **CameraX用于驱动获取相机帧及预览**
 - **renderScript用于YUV转成RGBA**
+
+## 源码地址
+完整源码带模型文件 求 **Star** ： [https://github.com/riskycheng/DetectX](https://github.com/riskycheng/DetectX)
 
 
 # 定制合作
