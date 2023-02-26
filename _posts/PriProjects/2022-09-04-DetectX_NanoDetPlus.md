@@ -123,10 +123,10 @@ public void onAnalysisDone(Bitmap resBitmap) {
 ### **NCNN实现NanoDet-Plus_m416推理**  
 
 #### NanoDet-Plus网络结构
-![nanodet-plus-arch.png](http://tva1.sinaimg.cn/large/6b260656gy1h5uyxninprj20yh0fddo8.jpg)
+![nanodet-plus-arch.png](https://note.youdao.com/yws/api/personal/file/WEB5a91bfdbd758f4bb3a0d8d9597c91a96?method=download&shareKey=ba98fe8db7c8c125e7a65c0d5d1b9413)
 
 对于部署，不同于上一个版本，默认的模型结构中将之前的3尺度6输出，合并成单个节点输出：
-![006C3FgEgy1gxs7a3po8qj30k008sab2.jpg](http://tva1.sinaimg.cn/large/6b260656gy1h5uz12itk8j20k008saay.jpg)
+![006C3FgEgy1gxs7a3po8qj30k008sab2.jpg](https://note.youdao.com/yws/api/personal/file/WEB2613a099a4aeef3ce176b9385fc553f3?method=download&shareKey=a53e46da292b64e8d7c4c9e25cfd3cda)
 
 从原作者的git仓库中： [https://github.com/RangiLyu/nanodet/tree/main/demo_ncnn](https://note.youdao.com/)进行封装.  
 接口定义 nanodet.h:
@@ -506,15 +506,15 @@ Java_com_fatfish_chengjian_utils_JNIManager_nanoDet_1Detect(JNIEnv *env, jobject
 
 ## **阶段-4** 技术要点
 基于NanoDet-Plus，训练自己的数据集并完成设备端部署。本模型是客户定制模型，包含定位符号和叶片两种目标，其中定位符号用于对容器的位置进行定位并旋转矫正，叶片定位后用于计算面积、轮廓等信息，其中示意图如下所示：
-![Screenshot 2022-09-04 234017.png](http://tva1.sinaimg.cn/large/6b260656gy1h5v01rbfhwj20gn0ijq9m.jpg)
+![Screenshot 2022-09-04 234017.png](https://note.youdao.com/yws/api/personal/file/WEB7052944beded38ff66a11747bdc47017?method=download&shareKey=e60d4a90b3a35e515ce924ccf04a2338)
 
 
 # 效果演示
 通用模型演示效果， 备注（在设备上可以做到30帧/s运行速度，此处为了图床加载速度，FPS设置为1）
-![2022-09-04-23-26-26.gif](http://tva1.sinaimg.cn/large/6b260656gy1h5uzo5zzm4g20fe0uye82.gif)
+![2022-09-04-23-26-26.gif](https://note.youdao.com/yws/api/personal/file/WEBe56984beddfe91d2774b5706e844898b?method=download&shareKey=ccad70a6de4a033f8ad12200f06282b1)
 
 自定义模型演示效果， 备注（在设备上可以做到30帧/s运行速度，此处为了图床加载速度，FPS设置为1）
-![2022-09-04-23-42-50.gif](http://tva1.sinaimg.cn/large/6b260656gy1h5v053i2ncg20h60yg4qu.gif)
+![2022-09-04-23-42-50.gif](https://note.youdao.com/yws/api/personal/file/WEB0a4fd8b916a14c6e87c8be83ad5dcc82?method=download&shareKey=f46f8a39148a0e25a0595791c25af041)
 
 # 运行程序
 百度云：[Android APK版本](链接：https://pan.baidu.com/s/1ZZrF9CuJ2YQ0cwuWmtTMCA?pwd=sbpt)

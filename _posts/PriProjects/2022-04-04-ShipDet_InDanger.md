@@ -39,7 +39,7 @@ tags:
 ###### **针对Intel纯CPU设备**
 采用基于Intel OpenVINO进行部署，在i5-10400F 上达到7ms/帧的推理速度 （未量化，不含核显，否则会更快）
 ### **算法架构**
-![Picture.png](http://tva1.sinaimg.cn/large/6b260656gy1h2g22cub87j20ti0c8n0x.jpg)
+![Picture.png](https://note.youdao.com/yws/api/personal/file/WEBd754436dd69c16d50a9689bfb388468f?method=download&shareKey=75b77595827536f9757d3d0997183d6d)
 
 ## **阶段-2** 技术要点
 ### **支持外部json配置**  
@@ -92,7 +92,7 @@ tags:
 支持基于libVLC的实时流解析，兼容市面上各厂商的网络摄像机，支持RTSP、HTTP、RTMP等多重格式。
 
 ### **流程架构**
-![Picture2.png](http://tva1.sinaimg.cn/large/6b260656gy1h2g23hubjvj20v40ae77u.jpg)
+![Picture2.png](https://note.youdao.com/yws/api/personal/file/WEB2b5c800514678b4c9855fa116aee4380?method=download&shareKey=60e6ba0aa891187717253f8c19009a23)
 
 
 
@@ -121,7 +121,7 @@ tags:
 
 
 # 效果演示
-![Animation.gif](http://tva1.sinaimg.cn/large/6b260656gy1h40n6xqwwug21420ne1l2.gif)
+![Animation.gif](https://note.youdao.com/yws/api/personal/file/WEBf60e7ae3c09dafbe64cf4bd11598ac3a?method=download&shareKey=46f6948754b765cef03d58138c71d00a)
 
 # 运行程序
 [百度云：可执行程序下载](链接：https://pan.baidu.com/s/1d9bHeCwWUQYBrxA0W9vosg?pwd=h8c0)

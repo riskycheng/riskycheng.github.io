@@ -61,7 +61,7 @@ hitThresh 0.8         // 命中判定阈值
 ```
 
 ## 效果演示
-![Animation.gif](http://tva1.sinaimg.cn/large/6b260656gy1h2fz9m7kihg20l40yjhdu.gif)
+![Animation.gif](https://note.youdao.com/yws/api/personal/file/WEB9f2d69a18426b388e5b92d9637080c13?method=download&shareKey=8c9e2251369f9fafd365c1590671f117)
 
 ## 运行程序
 [百度云：可执行程序下载](链接：https://pan.baidu.com/s/1jn_ukT751RkJh-B3Odnfew?pwd=9pq5)
