@@ -4,7 +4,7 @@ istop: true
 title: "快递面单收件人信息识别"
 background-image: http://tva1.sinaimg.cn/large/6b260656gy1h2fzsyvy39j20lo098tfi.jpg
 date:  2022-05-14 15:45:56
-category: privProjects
+category: projects
 tags:
 - PaddleOCR
 - Nanodet

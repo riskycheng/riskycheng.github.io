@@ -1,10 +1,10 @@
 ---
 layout: blog
 istop: true
-title: "DetectX 深度学习模型Android部署 - NanoDet-Plus + NCNN"
+title: "DetectX-Android部署 - NanoDet-Plus"
 background-image: http://tva1.sinaimg.cn/large/6b260656gy1h5uyxninprj20yh0fddo8.jpg
 date:  2022-09-04 14:08:56
-category: privProjects
+category: projects
 tags:
 - Nanodet-Plus
 - ncnn
