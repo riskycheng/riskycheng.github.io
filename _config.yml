@@ -15,7 +15,7 @@ links:
     url:          /
     external:     false
   - name:         项目
-    url:          /projects
+    url:          /book
     external:     false
   - name:         旅游
     url:          /road
