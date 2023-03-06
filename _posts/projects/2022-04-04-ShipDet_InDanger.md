@@ -4,7 +4,7 @@ istop: true
 title: "船闸危险区域监测"
 background-image: http://tva1.sinaimg.cn/large/6b260656gy1h2g27squ4rj217r0k7kfe.jpg
 date:  2022-04-14 15:45:56
-category: 项目
+category: book
 tags:
 - Nanodet
 - libcurl

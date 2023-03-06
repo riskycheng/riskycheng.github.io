@@ -4,7 +4,7 @@ istop: true
 title: "NanoDet-Plus 安卓部署"
 background-image: http://tva1.sinaimg.cn/large/6b260656gy1h5uyxninprj20yh0fddo8.jpg
 date:  2022-09-04 14:08:56
-category: 项目
+category: book
 tags:
 - Nanodet-Plus
 - ncnn
