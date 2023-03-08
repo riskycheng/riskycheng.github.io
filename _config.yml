@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: hhttps://riskycheng.github.io # 域名
+url: https://riskycheng.github.io # 域名
 date_format: "ordinal"
 title: 码志
 subtitle: "公众号：闷骚的程序员"
