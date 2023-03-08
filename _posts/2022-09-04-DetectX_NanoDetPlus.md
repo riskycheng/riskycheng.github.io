@@ -1,14 +1,9 @@
 ---
-layout: blog
-istop: true
+layout: post
 title: "NanoDet-Plus 安卓部署"
-background-image: http://tva1.sinaimg.cn/large/6b260656gy1h5uyxninprj20yh0fddo8.jpg
-date:  2022-09-04 14:08:56
-category: 书籍
-tags:
-- Nanodet-Plus
-- ncnn
-- Vulkan
+categories: Android
+description: 使用流行的NCNN, DNN， MNN， SNPE， torch_c++ 等框架将主流的Yolo，Nanodet， MobileSSD等模型部署到Android设备上。
+keywords: Nanodet-Plus, ncnn, Vulkan
 ---
 
 # 需求背景
