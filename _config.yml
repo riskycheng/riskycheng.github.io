@@ -72,6 +72,11 @@ navs:
     href: /
     label: 首页
 
+
+  -
+    href: /open-source/
+    label: 项目
+
   -
     href: /categories/
     label: 分类
@@ -79,10 +84,6 @@ navs:
 #   -
 #     href: /archives/
 #     label: 归档
-
-#   -
-#     href: /open-source/
-#     label: 开源
 
   -
     href: /wiki/
