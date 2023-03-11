@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "NanoDet-Plus 安卓部署"
-categories: Android
+categories: Machine-Learning
 description: 使用流行的NCNN, DNN， MNN， SNPE， torch_c++ 等框架将主流的Yolo，Nanodet， MobileSSD等模型部署到Android设备上。
 keywords: Nanodet-Plus, ncnn, Vulkan
 ---
