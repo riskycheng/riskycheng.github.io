@@ -7,9 +7,16 @@
 
 - name: Machine Learning Developer Keywords
   keywords:
-      - pytorch/tensorflow/paddle
-      - detection/tracking/recognition
-      - ncnn/snpe/dnn/mnn/dnn
+      - pytorch
+      - tensorflow
+      - paddle
+      - object detection & tracking
+      - NCNN
+      - SNPE
+      - MNN
+      - DNN
+      - TNN
+      - OpenVINO
 
 - name: Platform Developer Keywords
   keywords:
