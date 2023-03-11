@@ -1,15 +1,10 @@
 ---
-layout: blog
-istop: true
+layout: post
 title: "快递面单信息识别"
-background-image: http://tva1.sinaimg.cn/large/6b260656gy1h2fzsyvy39j20lo098tfi.jpg
 date:  2022-05-14 15:45:56
-category: 书籍
-tags:
-- PaddleOCR
-- Nanodet
-- Zbar
-- 文本检测识别
+categories: Android
+description: 针对快递面单信息提取需求，使用OCR 可以进行文本内容的提取（检测 & 识别 ）。但却难以分解收件人、寄件人等具体信息。并且由于不同厂商、同一厂商不同时期的面单格式可能存在较大差异，从而使得后检测识别后的内容理解&分解变得更加复杂。
+keywords: PaddleOCR, Nanodet, Zbar, 文本检测识别
 ---
 
 

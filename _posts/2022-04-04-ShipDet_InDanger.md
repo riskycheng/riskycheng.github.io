@@ -1,17 +1,12 @@
 ---
-layout: blog
-istop: true
+layout: post
 title: "船闸危险区域监测"
-background-image: http://tva1.sinaimg.cn/large/6b260656gy1h2g27squ4rj217r0k7kfe.jpg
 date:  2022-04-14 15:45:56
-category: 书籍
-tags:
-- Nanodet
-- libcurl
-- openVINO
-- ncnn
-- Vulkan
+categories: Android
+description: 船舶检测及危险警戒线状态预警。支持基于OpenVINO，NCNN-Vulkan推理加速，支持RTSP流输入。
+keywords: Nanodet, libcurl, openVINO, ncnn, Vulkan
 ---
+
 
 船舶检测及危险警戒线状态预警。
 支持基于OpenVINO，NCNN-Vulkan推理加速，支持RTSP流输入。
