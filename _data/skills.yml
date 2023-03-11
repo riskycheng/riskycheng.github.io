@@ -5,15 +5,16 @@
       - Python
       - Design Patterns
 
-- name: Mobile Developer Keywords
+- name: Machine Learning Developer Keywords
   keywords:
-      - Android
-      - Reverse Engineering
+      - pytorch/tensorflow/paddle
+      - detection/tracking/recognition
+      - ncnn/snpe/dnn/mnn/dnn
 
-- name: Windows Developer Keywords
+- name: Platform Developer Keywords
   keywords:
-      - Win32 SDK
-      - DuiLib
-      - WTL
-      - COM
-      - WinDbg
+      - Windows SDK
+      - Qt
+      - Android
+      - QNX
+      - Linux
