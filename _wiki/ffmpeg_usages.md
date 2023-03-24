@@ -1,6 +1,6 @@
 ---
 layout: wiki
-title: ffmpeg常见用法
+title: FFMPEG 常见用法
 cate1: Utils
 cate2:
 description: ffmpeg
