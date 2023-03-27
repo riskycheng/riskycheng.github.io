@@ -26,7 +26,7 @@ Android下的Camera接口从Camera到Camera2，始终比较难用，在最新的
 ### **CameraX主要流程**
 ##### 继承Analyzer
 在Analyzer中实现深度学习模型的计算调用，并将其加入到后续的CameraX的实例中：
-```
+```java
 public class NanodetPlusAnalyzer implements ImageAnalysis.Analyzer {
     private final static String TAG = NanodetPlusAnalyzer.class.getSimpleName();
     private Context mContext;
@@ -66,7 +66,7 @@ public class NanodetPlusAnalyzer implements ImageAnalysis.Analyzer {
 
 
 ##### 初始化Camera实例
-```
+```java
 // 实例化ImageAnalysis
 public ImageAnalysis buildAnalyzer(ImageAnalysis.Analyzer analyzer) {
     ImageAnalysis resAnalyzer = new ImageAnalysis.Builder().build();
@@ -105,7 +105,7 @@ public void setupCamera(ImageAnalysis.Analyzer analyzer) {
 
 ##### UI渲染结果
 通过接口来异步更新结果，为了方便，将结果直接绘制到了原图内存中，因此这里的resBitmap就是带有结果的实例。
-```
+```java
 public void onAnalysisDone(Bitmap resBitmap) {
     runOnUiThread(() -> {
         Log.d(TAG, "got result from analyzer...");
@@ -125,7 +125,7 @@ public void onAnalysisDone(Bitmap resBitmap) {
 
 从原作者的git仓库中： [https://github.com/RangiLyu/nanodet/tree/main/demo_ncnn](https://note.youdao.com/)进行封装.  
 接口定义 nanodet.h:
-```
+```java
 //
 // Create by RangiLyu
 // 2020 / 10 / 2
@@ -200,7 +200,7 @@ private:
 ```
 
 接口实现 nanodet.cpp:
-```
+```java
 //
 // Create by RangiLyu
 // 2020 / 10 / 2
@@ -446,7 +446,7 @@ void NanoDet::nms(std::vector<BoxInfo>& input_boxes, float NMS_THRESH)
 
 ### **深度学习native接口**
 在JNI层实现以上Nanodet接口的调用，从而完成深度学习模型推理, 并在完成计算后将结果直接绘制到原图的Buffer上：
-```
+```java
 extern "C"
 JNIEXPORT void JNICALL
 Java_com_fatfish_chengjian_utils_JNIManager_nanoDet_1Init(JNIEnv *env, jobject thiz,
