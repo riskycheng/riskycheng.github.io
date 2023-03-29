@@ -13,41 +13,48 @@ A complete, cross-platform solution to record, convert and stream audio and vide
 ## 常见用法
 
 压缩视频：
-```
+```bash
 ffmpeg -y -i <input-video-path> -s 640x480 -vcodec libx264 -b 800000 <out-video-path>
 ```
+
 图片序列转视频：
-```
+```bash
 ffmpeg -f image2 -i /home/ttwang/images/image%d.jpg  -vcodec libx264 -r 10  tt.mp4
 ```
 
-视频转图片序列：
+重复图片转视频：
+```bash
+ffmpeg -loop 1 -i .\images_%03d.bmp -c:v libx264 -t 30 -pix_fmt yuv420p output.mp4
 ```
+
+视频转图片序列：
+```bash
 ffmpeg -i input.flv -r 30 -f image2 image_%03d.jpg
 ```
+
 视频去掉音轨：
-```
+```bash
 ffmpeg -i input_video.avi  -an output_video_no_sound.avi
 ```
 
 视频修改码率：
-```
+```bash
 ffmpeg -i input.mp4  -b:v 10000k output4.mp4
 ```
 
 QDMS使用视频转码:
-```
+```bash
 ffmpeg.exe -i  inputVideo.mp4  -vf fps=30  outputVideo.mp4
 ```
 
 视频截取中间片段:
-```
+```bash
 ffmpeg -ss 00:03:00 -i video.mp4 -to 00:02:00 -c copy cut.mp4
 ```
 
 视频旋转(顺时针)：
 
-```
+```python
 import os
 
 import cv2
