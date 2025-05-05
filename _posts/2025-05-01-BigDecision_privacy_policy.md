@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "BigDecision - 隐私政策"
+title: "小决定-AI分析 - 隐私政策"
 categories: App-Development
 description: BigDecision应用的隐私政策声明，阐述我们如何保护用户隐私和数据安全。
 keywords: IOS, Decision Making, App, Tool, Cross-platform, Privacy Policy

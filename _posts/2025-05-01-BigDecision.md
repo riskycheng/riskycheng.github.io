@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "BigDecision - 智能决策辅助工具"
+title: "小决定-AI分析 - 智能决策辅助工具"
 categories: App-Development
 description: 一款直观、强大的决策辅助应用，帮助用户做出更明智的选择。
 keywords: IOS,Decision Making, App, Tool, Cross-platform

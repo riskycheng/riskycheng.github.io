@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "笔趣爱读 - 隐私政策"
+title: "笔趣读书 - 隐私政策"
 categories: iOS-Development
 description: 笔趣爱读应用的隐私政策声明，阐述我们如何保护用户隐私和数据安全。
 keywords: iOS, Reader, Novel, App, Privacy Policy
