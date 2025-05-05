@@ -13,9 +13,9 @@ keywords: IOS,Decision Making, App, Tool, Cross-platform
 ## 功能介绍
 
 ### 欢迎页面
-![欢迎页面](./images/posts/BigDecision/home_ios.png)
-![特色功能](./images/posts/BigDecision/welcome_ios.png)
-![开始使用](./images/posts/BigDecision/results.png)
+![欢迎页面](/images/posts/BigDecision/home_ios.png)
+![特色功能](/images/posts/BigDecision/welcome_ios.png)
+![开始使用](/images/posts/BigDecision/results.png)
 
 ### 决策矩阵
 科学的决策矩阵系统，通过加权标准对不同选项进行量化评估，让复杂决策变得清晰可见。
@@ -26,7 +26,7 @@ keywords: IOS,Decision Making, App, Tool, Cross-platform
 ### 利弊分析
 详细的利弊对比功能，帮助您全面考量每个选择的优缺点。
 
-![利弊分析](./images/posts/BigDecision/details_3.png)
+![利弊分析](/images/posts/BigDecision/details_3.png)
 
 ### 个性化设置
 丰富的自定义选项：
@@ -56,9 +56,9 @@ keywords: IOS,Decision Making, App, Tool, Cross-platform
 - 隐私控制
 - 导出与备份
 
-![设置中心](./images/posts/BigDecision/settings_ios.png)
-![隐私政策](./images/posts/BigDecision/privacy.png)
-![用户协议](./images/posts/BigDecision/user_guides.png)
+![设置中心](/images/posts/BigDecision/settings_ios.png)
+![隐私政策](/images/posts/BigDecision/privacy.png)
+![用户协议](/images/posts/BigDecision/user_guides.png)
 
 # 核心特色
 
