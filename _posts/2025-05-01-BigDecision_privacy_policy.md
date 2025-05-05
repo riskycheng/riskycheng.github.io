@@ -5,11 +5,11 @@ categories: App-Development
 description: BigDecision应用的隐私政策声明，阐述我们如何保护用户隐私和数据安全。
 keywords: IOS, Decision Making, App, Tool, Cross-platform, Privacy Policy
 ---
-# BigDecision - 隐私政策声明
+# 小决定-AI分析 - 隐私政策声明
 
 ## 重要声明
 
-**BigDecision是一款专注于决策辅助的应用，我们特别强调：**
+**小决定-AI分析是一款专注于决策辅助的应用，我们特别强调：**
 
 - 我们高度重视用户数据的隐私和安全
 - 用户的决策数据默认仅存储在本地设备上

@@ -6,7 +6,7 @@ description: 一款直观、强大的决策辅助应用，帮助用户做出更�
 keywords: IOS,Decision Making, App, Tool, Cross-platform
 ---
 
-# BigDecision - 让决策更简单
+# 小决定-AI分析 - 让决策更简单
 
 在这个充满选择的世界里，我们常常面临复杂的决策困境。BigDecision作为一款智能决策辅助工具，致力于帮助用户通过结构化思考做出更明智的选择。
 
